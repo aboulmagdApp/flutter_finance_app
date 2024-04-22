@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'screens/home.dart';
 import 'screens/statistics.dart';
+import 'widgets/menu_bottom.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData(useMaterial3: false),
       home: const Scaffold(
-        body: Statistics(),
+        body: MenuBottom(),
       ),
     );
   }

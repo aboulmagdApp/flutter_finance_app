@@ -14,12 +14,12 @@ class Home extends StatelessWidget {
           SliverToBoxAdapter(
             child: SizedBox(height: 340, child: header()),
           ),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
+              padding: EdgeInsets.symmetric(horizontal: 15),
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text(
                       'Transaction History',
                       style: TextStyle(
@@ -114,11 +114,11 @@ class Home extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 35, left: 10),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 35, left: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const <Widget>[
+                      children: <Widget>[
                         Text(
                           'Good afterNoon',
                           style: TextStyle(
@@ -158,15 +158,15 @@ class Home extends StatelessWidget {
                 ],
                 color: const Color.fromARGB(255, 47, 125, 121),
                 borderRadius: BorderRadius.circular(20)),
-            child: Column(children: [
-              const SizedBox(
+            child: const Column(children: [
+              SizedBox(
                 height: 10,
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
+                padding: EdgeInsets.symmetric(horizontal: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text(
                       'Total Balance',
                       style: TextStyle(
@@ -182,13 +182,13 @@ class Home extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 10,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 15),
+                padding: EdgeInsets.only(left: 15),
                 child: Row(
-                  children: const [
+                  children: [
                     Text(
                       '\$ 2.957',
                       style: TextStyle(
@@ -200,16 +200,16 @@ class Home extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 25,
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
+                padding: EdgeInsets.symmetric(horizontal: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
-                      children: const [
+                      children: [
                         CircleAvatar(
                           radius: 13,
                           backgroundColor: Color.fromARGB(255, 85, 145, 141),
@@ -233,7 +233,7 @@ class Home extends StatelessWidget {
                       ],
                     ),
                     Row(
-                      children: const [
+                      children: [
                         CircleAvatar(
                           radius: 13,
                           backgroundColor: Color.fromARGB(255, 85, 145, 141),
@@ -259,14 +259,14 @@ class Home extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 6,
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
+                padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text(
                       '\$ 1,450',
                       style: TextStyle(

@@ -37,4 +37,6 @@ class Utils {
       transfer
     ];
   }
+
+  static List timeUnits = ['day', 'week', 'month', 'year'];
 }
